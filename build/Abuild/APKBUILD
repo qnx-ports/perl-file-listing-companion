@@ -5,7 +5,7 @@ pkgname=perl-file-listing
 #_pkgreal is used by apkbuild-cpan to find modules at MetaCpan
 _pkgreal=File-Listing
 pkgver=6.16
-pkgrel=${pkgrel:-0}
+pkgrel=0
 pkgdesc="Parse directory listing"
 replaces="perl-libwww"
 url="https://metacpan.org/release/File-Listing/"
@@ -33,7 +33,6 @@ package() {
 }
 
 
-options="$options ${DISABLE_CHECK:+!check}"
 sha512sums="
 2d18f0cf7dbf30bb752c5d70132e90dd346e6fb795cb61664b8f11bfba67ec357235f5cb5a87752cf65ba9d000a6c7976548f0aed0f833048ca1b06aed991eca  File-Listing-6.16.tar.gz
 "
